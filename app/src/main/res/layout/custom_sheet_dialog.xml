@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_logo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/app_name"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:text="@string/exit_note"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:weightSum="3"
+        android:id="@+id/videos_btn_layout">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/modal_sheet_rate_us"
+            android:background="@drawable/custom_btn2"
+            android:text="Rate us"
+            android:textAllCaps="false"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:id="@+id/modal_sheet_share"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/custom_btn1"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:id="@+id/modal_sheet_quit"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/custom_btn1"
+            android:text="Quit"
+            android:textAllCaps="false"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/primary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

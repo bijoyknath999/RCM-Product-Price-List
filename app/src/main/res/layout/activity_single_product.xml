@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SingleProduct"
+    android:background="@color/color1"
+    android:orientation="vertical"
+    android:id="@+id/single_product_layout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/single_product_toolbar_back"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/single_product_toolbar_title"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/single_product_viewpager"
+            android:layout_above="@id/single_product_adLayout"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/primary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/single_product_adLayout"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/single_product_adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:id="@+id/single_product_facebook_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

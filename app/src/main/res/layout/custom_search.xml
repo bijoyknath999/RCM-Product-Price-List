@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:imeOptions="actionSearch"
+        android:textColor="#FA615E5E"
+        android:textColorHint="#FAA59D9D"
+        android:textStyle="bold"
+        android:focusable="false"
+        app:iconifiedByDefault="false"
+        app:searchIcon="@null"
+        app:queryHint="" />
+
+</RelativeLayout>

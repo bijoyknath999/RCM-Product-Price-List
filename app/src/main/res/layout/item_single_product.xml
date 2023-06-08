@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="@color/white">
+
+        <com.jsibbold.zoomage.ZoomageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/item_single_product_image"
+            android:src="@drawable/ic_a"
+            android:scaleType="centerCrop"
+            app:zoomage_restrictBounds="false"
+            app:zoomage_animateOnReset="true"
+            app:zoomage_autoResetMode="UNDER"
+            app:zoomage_autoCenter="true"
+            app:zoomage_zoomable="true"
+            app:zoomage_translatable="true"
+            app:zoomage_minScale="0.6"
+            app:zoomage_maxScale="8"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_single_product_title"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_single_product_mrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/color3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_single_product_saleprice"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/item_single_product_pv"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/color1"
+                app:cardCornerRadius="30dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/item_single_product_fav"
+                    android:background="@android:color/transparent"
+                    android:text="Add To Favorite"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="16sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/color1"
+                app:cardCornerRadius="30dp"
+                android:layout_marginLeft="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/item_single_product_share"
+                    android:background="@android:color/transparent"
+                    android:text="Share Product"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/lato_regular"
+                    android:textSize="16sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_marginBottom="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/white">
+
+            <com.jsibbold.zoomage.ZoomageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:id="@+id/item_single_recent_product_image"
+                android:src="@drawable/ic_a"
+                android:scaleType="centerCrop"
+                app:zoomage_restrictBounds="false"
+                app:zoomage_animateOnReset="true"
+                app:zoomage_autoResetMode="UNDER"
+                app:zoomage_autoCenter="true"
+                app:zoomage_zoomable="true"
+                app:zoomage_translatable="true"
+                app:zoomage_minScale="0.6"
+                app:zoomage_maxScale="8"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_single_recent_product_title"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/black"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_single_recent_product_new_mrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/color3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_single_recent_product_new_sp"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/item_single_recent_product_new_pv"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color1"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/item_single_recent_product_old_mrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/color3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_single_recent_product_old_sp"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/item_single_recent_product_old_pv"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/item_single_recent_product_price_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "265728491601",
+    "firebase_url": "https://rcm-product-price-list-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "rcm-product-price-list",
+    "storage_bucket": "rcm-product-price-list.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265728491601:android:edc14433360f18fe113870",
+        "android_client_info": {
+          "package_name": "com.rcm.productpricelist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265728491601-8ap72qhtcn1nipn9jqbl7mbpki7ck2t4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rcm.productpricelist",
+            "certificate_hash": "2ab1abc53dda2d7a2cea21f3249cb2216e9b754f"
+          }
+        },
+        {
+          "client_id": "265728491601-h3g7e0a1lrpnego4l5ps3rk7dksfd9a3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rcm.productpricelist",
+            "certificate_hash": "f5fe05439aee5600fee648fe07e1c451315a2ea2"
+          }
+        },
+        {
+          "client_id": "265728491601-clnsc22fvksan7m9h60t3seig5nv257n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnGMbicS1vRxQeAqZ-uC0YO2OGfmKQ0-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265728491601-clnsc22fvksan7m9h60t3seig5nv257n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
